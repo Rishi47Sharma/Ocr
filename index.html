@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Capture and OCR</title>
+</head>
+<body>
+  <h1>Photo Capture and OCR</h1>
+
+  <!-- Video element for camera stream -->
+  <video id="video" autoplay></video>
+
+  <!-- Buttons for capturing and saving photo -->
+  <button onclick="capturePhoto()">Capture Photo</button>
+  <button onclick="savePhoto()">Save Photo</button>
+  <button onclick="performOCR()">Perform OCR</button>
+
+  <!-- Image display area -->
+  <div id="imageDisplay">
+    <img id="capturedImage" src="#" alt="Captured Photo">
+  </div>
+
+  <!-- OCR result display area -->
+  <div id="ocrResult">
+    <h2>OCR Result:</h2>
+    <p id="ocrText"></p>
+  </div>
+
+  <!-- Tesseract.js -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
